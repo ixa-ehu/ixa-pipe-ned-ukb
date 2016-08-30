@@ -136,6 +136,7 @@ public class Annotate {
 
 	String[] contextStrings = matchedContext.split(" ");
 	for(String contextString : contextStrings){
+	    if(contextString.equals("")) continue;
 	    contextString = contextString.trim();
 
 	    //ContextString = spot_string@@spot_offset
